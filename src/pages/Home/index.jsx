@@ -1,9 +1,9 @@
-import Navbar from "../../components/Navbar";
+import Header from "../../components/Header";
 
 const Home = () => {
   return (
     <main className="h-screen w-screen bg-slate-500">
-      <Navbar />
+      <Header />
     </main>
   );
 };

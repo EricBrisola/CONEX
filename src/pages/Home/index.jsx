@@ -2,7 +2,7 @@ import Header from "../../components/Header";
 
 const Home = () => {
   return (
-    <main className="h-screen w-screen bg-slate-500">
+    <main className="h-screen w-screen bg-[#EDF0EB]">
       <Header />
     </main>
   );

@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  .bg-custom {
+    background-color: rgba(255, 255, 255, 0.04);
+  }
+}

@@ -20,7 +20,7 @@ const AreaCard = ({ title, text, mainImage, background, cardBorder }) => {
 
       <div className="absolute right-[6rem] top-[4.21rem] flex w-[23.688rem] flex-col gap-[0.419rem]">
         <p className="text-xl font-bold">{title}</p>
-        <p className="text-wrap text-lg font-extralight">{text}</p>
+        <p className="text-wrap text-lg font-light">{text}</p>
       </div>
     </article>
   );

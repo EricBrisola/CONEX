@@ -1,4 +1,4 @@
-import Area from "../../components/AreaCard";
+import AreaCard from "../../components/AreaCard";
 import Header from "../../components/Header";
 import mainImage from "../../assets/homePage/Main/psm/psm-img.png";
 import psmBg from "../../assets/homePage/Main/psm/psm-bg.png";
@@ -17,14 +17,14 @@ const Home = () => {
         </p>
       </section>
       <section className="flex flex-col items-center gap-6">
-        <Area
+        <AreaCard
           text={text}
           title={title}
           background={psmBg}
           mainImage={mainImage}
           cardBorder={border}
         />
-        <Area
+        <AreaCard
           text={text}
           title={title}
           background={psmBg}

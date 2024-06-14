@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const AreaCard = ({ title, text, mainImage, background, cardBorder }) => {
   return (
     <article className="relative flex w-[52.5rem] justify-end font-JosefinSans">

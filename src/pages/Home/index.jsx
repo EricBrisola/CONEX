@@ -58,76 +58,82 @@ const Home = () => {
           CONHEÇA AS ÁREAS ATENDIDAS
         </p>
       </section>
-      <section className="flex flex-col items-center gap-36">
-        <article className="relative flex w-[52.5rem] justify-end font-JosefinSans">
+      <section className="mb-[30.344rem] flex flex-1 flex-col items-center gap-36">
+        <article className="relative flex h-[20.375rem] w-[52.5rem] justify-end font-JosefinSans">
           <img
             src={infoCards[0].mainImage}
             alt="card-main-image"
-            className="absolute bottom-[3.344rem] left-[1.85rem] z-20 object-contain"
+            className="absolute left-[0rem] top-[1.2rem] z-20 object-contain"
           />
           <img
             src={infoCards[0].background}
             alt="card-background-image"
-            className="absolute left-11 z-10 object-contain"
+            className="absolute left-3 top-[0.825rem] z-10 object-contain"
           />
 
           <img
             src={infoCards[0].textBackground}
             alt="card-border-image"
-            className="z-0 w-[39.375rem]"
+            className="z-0 h-[18.625rem] w-[41.25rem]"
           />
-
-          <div className="absolute right-[6rem] top-[4.21rem] flex w-[23.688rem] flex-col gap-[0.419rem]">
+          <p className="font-ReenieBeanie absolute bottom-[0.3rem] left-24 h-[3.6rem] text-[4.063rem] leading-none">
+            {infoCards[0].abbreviatedtitle}
+          </p>
+          <div className="absolute right-[6rem] top-[5.21rem] flex w-[23.688rem] flex-col gap-[0.419rem]">
             <p className="text-xl font-bold">{infoCards[0].title}</p>
             <p className="text-wrap text-lg font-light leading-[1.51]">
               {infoCards[0].text}
             </p>
           </div>
         </article>
-        <article className="relative flex w-[52.5rem] justify-end font-JosefinSans">
+        <article className="relative flex h-[25.913rem] w-[52.5rem] justify-end font-JosefinSans">
           <img
             src={infoCards[2].mainImage}
             alt="card-main-image"
-            className="absolute bottom-2 left-[3.9rem] z-20 object-contain"
+            className="absolute left-[3.4rem] z-20 object-contain"
           />
           <img
             src={infoCards[2].background}
             alt="card-background-image"
-            className="absolute bottom-2 left-5 z-10 object-contain"
+            className="absolute left-5 top-16 z-10 object-contain"
           />
 
           <img
             src={infoCards[2].textBackground}
             alt="card-border-image"
-            className="z-0 w-[39.375rem]"
+            className="absolute top-[4.75rem] z-0 h-[18.625rem] w-[41.25rem]"
           />
-
-          <div className="absolute right-[6rem] top-[5.21rem] flex w-[23.688rem] flex-col gap-[0.419rem]">
+          <p className="font-ReenieBeanie absolute bottom-0 left-32 h-[3.6rem] text-[4.063rem] leading-none">
+            {infoCards[2].abbreviatedtitle}
+          </p>
+          <div className="absolute right-[6rem] top-[10.5rem] flex w-[23.688rem] flex-col gap-[0.419rem]">
             <p className="text-xl font-bold">{infoCards[2].title}</p>
             <p className="text-wrap text-lg font-light leading-[1.51]">
               {infoCards[2].text}
             </p>
           </div>
         </article>
-        <article className="relative flex w-[52.5rem] justify-end font-JosefinSans">
+        <article className="relative flex h-[23.513rem] w-[52.5rem] justify-end font-JosefinSans">
           <img
             src={infoCards[4].mainImage}
             alt="card-main-image"
-            className="absolute bottom-10 left-[2.5rem] z-20 object-contain"
+            className="absolute left-[2.2rem] top-2 z-20 object-contain"
           />
           <img
             src={infoCards[4].background}
             alt="card-background-image"
-            className="absolute bottom-2 left-5 z-10 object-contain"
+            className="absolute left-5 top-0 z-10 object-contain"
           />
 
           <img
             src={infoCards[4].textBackground}
             alt="card-border-image"
-            className="z-0 w-[39.375rem]"
+            className="absolute top-10 z-0 h-[18.625rem] w-[41.25rem]"
           />
-
-          <div className="absolute right-[6rem] top-[5.21rem] flex w-[23.688rem] flex-col gap-[0.419rem]">
+          <p className="font-ReenieBeanie absolute left-32 top-[20.163rem] h-[3.6rem] text-[4.063rem] leading-none">
+            {infoCards[4].abbreviatedtitle}
+          </p>
+          <div className="absolute right-[6rem] top-[8rem] flex w-[23.688rem] flex-col gap-[0.419rem]">
             <p className="text-xl font-bold">{infoCards[4].title}</p>
             <p className="text-wrap text-lg font-light leading-[1.65]">
               {infoCards[4].text}

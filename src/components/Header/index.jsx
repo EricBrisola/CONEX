@@ -9,7 +9,7 @@ const Header = () => {
       <img
         src={logo}
         alt="log-image"
-        className="left-50 absolute top-[14.5rem] object-contain"
+        className="left-50 absolute top-[14.5rem] z-20 object-contain"
       />
       <img
         src={brainImage}
@@ -19,15 +19,15 @@ const Header = () => {
       <img
         src={meaning}
         alt="brain-image"
-        className="absolute left-[14.3rem] top-[4.2rem] h-[9.206rem] w-[23rem] object-contain"
+        className="absolute top-[4.2rem] h-[9.206rem] w-[23rem] -translate-x-[22.5rem] transform object-contain"
       />
       <img
         src={whiteLines}
         alt="brain-image"
-        className="absolute left-[13rem] top-[4.75rem] object-contain"
+        className="absolute top-[4.75rem] -translate-x-[6.5rem] transform object-contain"
       />
       <Navbar />
-      <div className="h-[1px] w-[74.563rem] bg-black"></div>
+      <div className="h-[1px] w-[88.563rem] bg-black"></div>
     </header>
   );
 };

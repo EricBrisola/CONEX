@@ -1,5 +1,10 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import line1 from "../../assets/homePage/Main/line-1.svg";
+import line2 from "../../assets/homePage/Main/line-2.svg";
+import line3 from "../../assets/homePage/Main/line-3.svg";
+import line4 from "../../assets/homePage/Main/line-4.svg";
+import line5 from "../../assets/homePage/Main/line-5.svg";
 
 const Home = () => {
   const infoCards = [
@@ -15,9 +20,9 @@ const Home = () => {
     {
       id: 1,
       title: "Psicologia Infantil",
-      text: "Atua com crianças, ajudando-as a ter um desenvolvimento saudável. É um ramo da ciência que trata das questões psíquicas de crianças. Assim, essa especialidade investiga e analisa o comportamento dessa faixa etária.",
-      mainImage: "../../assets/homePage/Main/pi/piImg.png",
-      background: "../../assets/homePage/Main/pi/pi-bg.png",
+      text: "Atua com crianças, ajudando-as a ter um desenvolvimento saudável. É um ramo da ciência que trata das questões psíquicas",
+      mainImage: "src/assets/homePage/Main/pi/piImg.png",
+      background: "src/assets/homePage/Main/pi/piCircle.svg",
       textBackground: "",
       abbreviatedtitle: "PI",
     },
@@ -34,9 +39,9 @@ const Home = () => {
     {
       id: 3,
       title: "Arteterapia",
-      text: "Recorre a elementos da atividade artística como forma de intervenção profissional. É direcionada à qualidade de vida e melhora da saúde. Abrange as mais diversas linguagens: pintura, dança, escultura, a história oral, música, modelagem, poesia, o audiovisual, entre outros. Uma forma de permitir o bem-estar e deixar fluir sentimentos por meio da expressão das obras.",
-      mainImage: "../../assets/homePage/Main/at/arImg 1.png",
-      background: "../../assets/homePage/Main/at/atRetangle.png",
+      text: "Recorre a elementos da atividade artística como forma de intervenção profissional. É direcionada à qualidade de vida e melhora",
+      mainImage: "src/assets/homePage/Main/at/arImg 1.png",
+      background: "src/assets/homePage/Main/at/atRetangle.png",
       textBackground: "",
       abbreviatedtitle: "AT",
     },
@@ -51,14 +56,14 @@ const Home = () => {
     },
   ];
   return (
-    <main className="max-w-screen flex min-h-screen flex-col bg-[#EDF0EB]">
+    <main className="max-w-screen relative flex min-h-screen flex-col bg-[#EDF0EB]">
       <Header />
       <section className="mb-6 mt-[4.563rem] flex h-28 justify-center">
         <p className="font-JosefinSans text-[2.813rem] font-extralight">
           CONHEÇA AS ÁREAS ATENDIDAS
         </p>
       </section>
-      <section className="mb-[30.344rem] flex flex-1 flex-col items-center gap-36">
+      <section className="relative mb-[18.344rem] flex flex-1 flex-col items-center">
         <article className="relative flex h-[20.375rem] w-[52.5rem] justify-end font-JosefinSans">
           <img
             src={infoCards[0].mainImage}
@@ -76,7 +81,7 @@ const Home = () => {
             alt="card-border-image"
             className="z-0 h-[18.625rem] w-[41.25rem]"
           />
-          <p className="font-ReenieBeanie absolute bottom-[0.3rem] left-24 h-[3.6rem] text-[4.063rem] leading-none">
+          <p className="absolute bottom-[0.3rem] left-24 h-[3.6rem] font-ReenieBeanie text-[4.063rem] leading-none">
             {infoCards[0].abbreviatedtitle}
           </p>
           <div className="absolute right-[6rem] top-[5.21rem] flex w-[23.688rem] flex-col gap-[0.419rem]">
@@ -86,6 +91,33 @@ const Home = () => {
             </p>
           </div>
         </article>
+        <img src={line1} alt="line-1" className="absolute top-[15.8rem] z-30" />
+        <article className="relative flex h-[23.513rem] w-[52.5rem] justify-end font-JosefinSans">
+          <img
+            src={infoCards[1].mainImage}
+            alt="card-main-image"
+            className="absolute right-4 top-[2.10rem] z-20 object-contain"
+          />
+          <img
+            src={infoCards[1].background}
+            alt="card-background-image"
+            className="absolute right-0 top-[1.7rem] z-10 object-contain"
+          />
+          <p className="absolute right-[7.5rem] top-[20.163rem] h-[3.6rem] font-ReenieBeanie text-[4.063rem] leading-none">
+            {infoCards[1].abbreviatedtitle}
+          </p>
+          <div className="absolute right-[19rem] top-[8.5rem] flex w-[23.688rem] flex-col items-end gap-[0.419rem]">
+            <p className="text-xl font-bold">{infoCards[1].title}</p>
+            <p className="text-wrap text-right text-lg font-light leading-[1.65]">
+              {infoCards[1].text}
+            </p>
+          </div>
+        </article>
+        <img
+          src={line2}
+          alt="line-2"
+          className="absolute top-[39rem] z-0 h-[12rem] translate-x-[3.2rem] transform"
+        />
         <article className="relative flex h-[25.913rem] w-[52.5rem] justify-end font-JosefinSans">
           <img
             src={infoCards[2].mainImage}
@@ -103,7 +135,7 @@ const Home = () => {
             alt="card-border-image"
             className="absolute top-[4.75rem] z-0 h-[18.625rem] w-[41.25rem]"
           />
-          <p className="font-ReenieBeanie absolute bottom-0 left-32 h-[3.6rem] text-[4.063rem] leading-none">
+          <p className="absolute bottom-0 left-32 h-[3.6rem] font-ReenieBeanie text-[4.063rem] leading-none">
             {infoCards[2].abbreviatedtitle}
           </p>
           <div className="absolute right-[6rem] top-[10.5rem] flex w-[23.688rem] flex-col gap-[0.419rem]">
@@ -113,6 +145,38 @@ const Home = () => {
             </p>
           </div>
         </article>
+        <img
+          src={line3}
+          alt="line-3"
+          className="absolute top-[64.5rem] z-0 h-[12rem] -translate-x-[2rem] transform"
+        />
+
+        <article className="relative flex h-[23.513rem] w-[52.5rem] justify-end font-JosefinSans">
+          <img
+            src={infoCards[3].mainImage}
+            alt="card-main-image"
+            className="absolute right-[2.6rem] top-[4.42rem] z-20 object-contain"
+          />
+          <img
+            src={infoCards[3].background}
+            alt="card-background-image"
+            className="absolute right-0 top-[1.7rem] z-10 object-contain"
+          />
+          <p className="absolute right-[6rem] top-[17.4rem] h-[3.6rem] font-ReenieBeanie text-[4.063rem] leading-none">
+            {infoCards[3].abbreviatedtitle}
+          </p>
+          <div className="absolute right-[18.55rem] top-[6.7rem] flex w-[23.688rem] flex-col items-end gap-[0.419rem]">
+            <p className="text-xl font-bold">{infoCards[3].title}</p>
+            <p className="text-wrap text-right text-lg font-light leading-[1.65]">
+              {infoCards[3].text}
+            </p>
+          </div>
+        </article>
+        <img
+          src={line4}
+          alt="line-4"
+          className="absolute left-1/2 top-[85.2rem] z-0 h-[12rem] -translate-x-1/4 transform"
+        />
         <article className="relative flex h-[23.513rem] w-[52.5rem] justify-end font-JosefinSans">
           <img
             src={infoCards[4].mainImage}
@@ -130,7 +194,7 @@ const Home = () => {
             alt="card-border-image"
             className="absolute top-10 z-0 h-[18.625rem] w-[41.25rem]"
           />
-          <p className="font-ReenieBeanie absolute left-32 top-[20.163rem] h-[3.6rem] text-[4.063rem] leading-none">
+          <p className="absolute left-32 top-[20.163rem] h-[3.6rem] font-ReenieBeanie text-[4.063rem] leading-none">
             {infoCards[4].abbreviatedtitle}
           </p>
           <div className="absolute right-[6rem] top-[8rem] flex w-[23.688rem] flex-col gap-[0.419rem]">
@@ -141,6 +205,11 @@ const Home = () => {
           </div>
         </article>
       </section>
+      <img
+        src={line5}
+        alt="line-5"
+        className="absolute bottom-[13rem] left-1/2 z-0 -translate-x-1/2 -translate-y-1/2 transform"
+      />
       <Footer />
     </main>
   );

@@ -7,8 +7,9 @@ import youtube from "../../assets/homePage/Footer/IconYoutube.png"
 import line from "../../assets/homePage/Footer/line_footer.png"
 
 const Footer = () => {
-  let listItemClass = "pt-10 pl-4 text-xl font-bold"
-  let navLinksStyle = "text-white text-lg font-semibold"
+  const listItemStyle = "pt-10 pl-4 text-xl font-bold"
+  const navLinksStyle = "text-white text-lg font-semibold"
+  const iconStyle = "px-2"
   return (
     <div className="max-w-screen mt-[6.875rem] h-[29.375rem]">
       <div className="flex h-2/5 w-full flex-col items-center justify-start">
@@ -31,22 +32,22 @@ const Footer = () => {
             <img
               src={facebook}
               alt="log-image"
-              className=""
+              className={iconStyle}
             />
             <img
               src={linkedin}
               alt="log-image"
-              className=""
+              className={iconStyle}
             />
             <img
               src={youtube}
               alt="log-image"
-              className=""
+              className={iconStyle}
             />
             <img
               src={instagram}
               alt="log-image"
-              className=""
+              className={iconStyle}
             />
           </div>
         </div>
@@ -54,13 +55,13 @@ const Footer = () => {
           <div className="text-white text-2xl font-bold h-auto">Áreas Trabalhadas</div>
           <div className="flex">
             <div className="w-full h-auto text-white flex flex-col">
-              <p className={listItemClass}>PSM</p>
-              <p className={listItemClass}>PI</p>
-              <p className={listItemClass}>PAI</p>
+              <p className={listItemStyle}>PSM</p>
+              <p className={listItemStyle}>PI</p>
+              <p className={listItemStyle}>PAI</p>
             </div>
             <div className="w-full h-auto text-white flex flex-col">
-              <p className={listItemClass}>AT</p>
-              <p className={listItemClass}>TCC</p>
+              <p className={listItemStyle}>AT</p>
+              <p className={listItemStyle}>TCC</p>
             </div>
           </div>
         </div>

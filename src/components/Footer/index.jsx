@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import cursorImage from "../../assets/homePage/divConexe/cursormouse-1.png";
-import facebook from "../../assets/homePage/Footer/Iconfacebook.png"
+import facebook from "../../assets/homePage/Footer/IconFacebook.png"
 import instagram from "../../assets/homePage/Footer/IconInstagram.png"
 import linkedin from "../../assets/homePage/Footer/IconLinkedin.png"
 import youtube from "../../assets/homePage/Footer/IconYoutube.png"

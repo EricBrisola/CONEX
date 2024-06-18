@@ -7,7 +7,7 @@ const AboutUS = () => {
   return (
     <main className="max-w-screen relative flex min-h-screen flex-col bg-[#EDF0EB]">
       <Header />
-      <div className="w-screen flex justify-center pt-20">
+      <div className="w-full flex justify-center pt-20">
         <div className="w-[83%] h-[140vh] bg-white border-2 border-black rounded-[80px] flex flex-col items-center pt-16 px-36 mb-16">
           <h1 className="text-[72px] font-thin">SOBRE NÓS</h1>
           <img

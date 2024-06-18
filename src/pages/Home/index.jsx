@@ -6,6 +6,7 @@ import line3 from "../../assets/homePage/Main/line-3.svg";
 import line4 from "../../assets/homePage/Main/line-4.svg";
 import line5 from "../../assets/homePage/Main/line-5.svg";
 import InfoCard from "../../components/InfoCard";
+import Modal from "../../components/Modal";
 
 const Home = () => {
   const infoCards = [
@@ -15,6 +16,8 @@ const Home = () => {
         "relative flex h-[20.375rem] w-[52.5rem] justify-end font-JosefinSans",
       title: "Psicologia e saúde da mulher",
       text: "Aborda uma variedade de tópicos relacionados à saúde integral das mulheres: física, mental e emocional, em diferentes fases do desenvolvimento",
+      fullText:
+        "Aborda uma variedade de tópicos relacionados à saúde integral das mulheres: física, mental e emocional, em diferentes fases do desenvolvimento, desde a infância até a idade adulta e o envelhecimento. Busca proporcionar conhecimento, bem-estar físico, mental, psicológico e social.",
       mainImage: "src/assets/homePage/Main/psm/psm-img.png",
       background: "src/assets/homePage/Main/psm/psm-retangle.svg",
       textBackground: "src/assets/homePage/Main/cloud-blue.png",
@@ -36,6 +39,8 @@ const Home = () => {
         "relative flex h-[23.513rem] w-[52.5rem] justify-end font-JosefinSans",
       title: "Psicologia Infantil",
       text: "Atua com crianças, ajudando-as a ter um desenvolvimento saudável. É um ramo da ciência que trata das questões psíquicas",
+      fullText:
+        "Atua com crianças, ajudando-as a ter um desenvolvimento saudável. É um ramo da ciência que trata das questões psíquicas de crianças. Assim, essa especialidade investiga e analisa o comportamento dessa faixa etária.",
       mainImage: "src/assets/homePage/Main/pi/piImg.png",
       background: "src/assets/homePage/Main/pi/piCircle.svg",
       textBackground: "",
@@ -57,6 +62,8 @@ const Home = () => {
         "relative flex h-[25.913rem] w-[52.5rem] justify-end font-JosefinSans",
       title: "Psicologia Do Adulto E Do Idoso ",
       text: "O atendimento psicológico para idosos é direcionado ao desenvolvimento cognitivo. Geralmente, essas terapias são desempenhadas",
+      fullText:
+        "Geralmente, essas terapias são desempenhadas em grupo para que o idoso também possa desenvolver a socialização. O psicólogo irá intermediar o contato do idoso com as situações desafiadoras da velhice, proporcionando um olhar diferente, e irá desenvolver atividades que ele possa executar e aprender ao mesmo tempo como encarar esses desafios.",
       mainImage: "src/assets/homePage/Main/pai/father-img.png",
       background: "src/assets/homePage/Main/pai/pai-circle.svg",
       textBackground: "src/assets/homePage/Main/cloud-blue.png",
@@ -79,6 +86,8 @@ const Home = () => {
         "relative flex h-[23.513rem] w-[52.5rem] justify-end font-JosefinSans",
       title: "Arteterapia",
       text: "Recorre a elementos da atividade artística como forma de intervenção profissional. É direcionada à qualidade de vida e melhora",
+      fullText:
+        "Recorre a elementos da atividade artística como forma de intervenção profissional. É direcionada à qualidade de vida e melhora da saúde. Abrange as mais diversas linguagens: pintura, dança, escultura, a história oral, música, modelagem, poesia, o audiovisual, entre outros. Uma forma de permitir o bem-estar e deixar fluir sentimentos por meio da expressão das obras.",
       mainImage: "src/assets/homePage/Main/at/arImg 1.png",
       background: "src/assets/homePage/Main/at/atRetangle.png",
       textBackground: "",
@@ -101,6 +110,8 @@ const Home = () => {
         "relative flex h-[23.513rem] w-[52.5rem] justify-end font-JosefinSans",
       title: "Terapia Cognitivo Comportamental",
       text: "Uma abordagem estruturada, estabelecida a partir da colaboração entre terapeuta e paciente. É recomendada e produz resultados",
+      fullText:
+        "Produz resultados eficazes para diversos transtornos psicológicos e emocionais, entre eles: Fobias; Ansiedade; Transtornos alimentares; Adicção; Depressão; Transtorno obsessivo-compulsivo (TOC); Comportamentais e psiquiátricos. A técnica consiste em buscar uma reestruturação cognitiva sobre emoções e comportamentos, por meio de intervenções sobre as cognições baseadas em eventos significativos para o paciente.",
       mainImage: "src/assets/homePage/Main/tcc/tccImg.png",
       background: "src/assets/homePage/Main/tcc/tccImg.svg",
       textBackground: "src/assets/homePage/Main/cloud-blue.png",
@@ -127,25 +138,7 @@ const Home = () => {
       </section>
       <section className="relative mb-[18.344rem] flex flex-1 flex-col items-center">
         {infoCards.map((infoCard) => {
-          return (
-            <InfoCard
-              key={infoCard.id}
-              cardStyle={infoCard.cardStyle}
-              title={infoCard.title}
-              text={infoCard.text}
-              mainImage={infoCard.mainImage}
-              background={infoCard.background}
-              textBackground={infoCard?.textBackground}
-              textBackgroundStyle={infoCard.textBackgroundStyle}
-              textSectionStyle={infoCard.textSectionStyle}
-              abreviatedTitle={infoCard.abbreviatedtitle}
-              abreviatedTitleStyle={infoCard.abreviatedTitleStyle}
-              backgroundStyle={infoCard.backgroundStyle}
-              mainImageStyle={infoCard.mainImageStyle}
-              btnStyle={infoCard.btnStyle}
-              textStyle={infoCard.textStyle}
-            />
-          );
+          return <InfoCard key={infoCard.id} infoCard={infoCard} />;
         })}
         <img src={line1} alt="line-1" className="absolute top-[15.8rem] z-30" />
         <img
@@ -169,6 +162,14 @@ const Home = () => {
         alt="line-5"
         className="absolute bottom-[13rem] left-1/2 z-0 -translate-x-1/2 -translate-y-1/2 transform"
       />
+      <Modal>
+        <article className="absolute left-[2.813rem] top-[4.5rem] h-[19.85rem] w-[54.25rem] bg-slate-500">
+          <div className="">
+            <p className="text-xl font-bold"></p>
+            <p className="">{infoCards[0].fullText}</p>
+          </div>
+        </article>
+      </Modal>
       <Footer />
     </main>
   );

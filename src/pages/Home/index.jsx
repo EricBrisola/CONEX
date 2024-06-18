@@ -26,6 +26,9 @@ const Home = () => {
         "absolute right-[6rem] top-[5.21rem] flex w-[23.688rem] flex-col gap-[0.419rem]",
       abreviatedTitleStyle:
         "absolute bottom-[0.3rem] left-24 h-[3.6rem] font-ReenieBeanie text-[4.063rem] leading-none",
+      btnStyle:
+        "absolute bottom-[4.95rem] right-[28.15rem] font-JosefinSans text-[3.125rem] leading-none",
+      textStyle: "text-wrap text-lg font-light leading-[1.51]",
     },
     {
       id: 1,
@@ -44,13 +47,16 @@ const Home = () => {
         "absolute right-[19rem] top-[8.5rem] flex w-[23.688rem] flex-col items-end gap-[0.419rem]",
       abreviatedTitleStyle:
         "absolute right-[7.5rem] top-[20.163rem] h-[3.6rem] font-ReenieBeanie text-[4.063rem] leading-none",
+      btnStyle:
+        "absolute bottom-[6.3rem] left-[31.9rem] font-JosefinSans text-[3.125rem] leading-none",
+      textStyle: "text-wrap text-right text-lg font-light leading-[1.65]",
     },
     {
       id: 2,
       cardStyle:
         "relative flex h-[25.913rem] w-[52.5rem] justify-end font-JosefinSans",
       title: "Psicologia Do Adulto E Do Idoso ",
-      text: "Geralmente, essas terapias são desempenhadas em grupo para que o idoso também possa desenvolver a socialização",
+      text: "O atendimento psicológico para idosos é direcionado ao desenvolvimento cognitivo. Geralmente, essas terapias são desempenhadas",
       mainImage: "src/assets/homePage/Main/pai/father-img.png",
       background: "src/assets/homePage/Main/pai/pai-circle.svg",
       textBackground: "src/assets/homePage/Main/cloud-blue.png",
@@ -63,6 +69,9 @@ const Home = () => {
         "absolute right-[6rem] top-[10.5rem] flex w-[23.688rem] flex-col gap-[0.419rem]",
       abreviatedTitleStyle:
         "absolute bottom-0 left-32 h-[3.6rem] font-ReenieBeanie text-[4.063rem] leading-none",
+      btnStyle:
+        "absolute bottom-28 right-[28.16rem] font-JosefinSans text-[3.125rem] leading-none",
+      textStyle: "text-wrap text-lg font-light leading-[1.51]",
     },
     {
       id: 3,
@@ -82,13 +91,16 @@ const Home = () => {
         "absolute right-[18.55rem] top-[6.7rem] flex w-[23.688rem] flex-col items-end gap-[0.419rem]",
       abreviatedTitleStyle:
         "absolute right-[6rem] top-[17.4rem] h-[3.6rem] font-ReenieBeanie text-[4.063rem] leading-none",
+      btnStyle:
+        "absolute bottom-32 right-[18.55rem] font-JosefinSans text-[3.125rem] leading-none",
+      textStyle: "text-wrap text-right text-lg font-light leading-[1.65]",
     },
     {
       id: 4,
       cardStyle:
         "relative flex h-[23.513rem] w-[52.5rem] justify-end font-JosefinSans",
       title: "Terapia Cognitivo Comportamental",
-      text: "Uma abordagem estruturada, estabelecida a partir da colaboração entre terapeuta e paciente. É recomendada e produz resultados.",
+      text: "Uma abordagem estruturada, estabelecida a partir da colaboração entre terapeuta e paciente. É recomendada e produz resultados",
       mainImage: "src/assets/homePage/Main/tcc/tccImg.png",
       background: "src/assets/homePage/Main/tcc/tccImg.svg",
       textBackground: "src/assets/homePage/Main/cloud-blue.png",
@@ -100,6 +112,9 @@ const Home = () => {
         "absolute right-[6rem] top-[8rem] flex w-[23.688rem] flex-col gap-[0.419rem]",
       abreviatedTitleStyle:
         "absolute left-32 top-[20.163rem] h-[3.6rem] font-ReenieBeanie text-[4.063rem] leading-none",
+      btnStyle:
+        "absolute bottom-[7.1rem] left-[22.8rem] font-JosefinSans text-[3.125rem] leading-none",
+      textStyle: "text-wrap text-lg font-light leading-[1.51]",
     },
   ];
   return (
@@ -127,6 +142,8 @@ const Home = () => {
               abreviatedTitleStyle={infoCard.abreviatedTitleStyle}
               backgroundStyle={infoCard.backgroundStyle}
               mainImageStyle={infoCard.mainImageStyle}
+              btnStyle={infoCard.btnStyle}
+              textStyle={infoCard.textStyle}
             />
           );
         })}

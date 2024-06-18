@@ -12,6 +12,8 @@ const InfoCard = ({
   textSectionStyle,
   abreviatedTitle,
   abreviatedTitleStyle,
+  btnStyle,
+  textStyle,
 }) => {
   return (
     <article className={cardStyle}>
@@ -32,8 +34,9 @@ const InfoCard = ({
       <p className={abreviatedTitleStyle}>{abreviatedTitle}</p>
       <div className={textSectionStyle}>
         <p className="text-xl font-bold">{title}</p>
-        <p className="text-wrap text-lg font-light">{text}</p>
+        <p className={textStyle}>{text}</p>
       </div>
+      <button className={btnStyle}>...</button>
     </article>
   );
 };

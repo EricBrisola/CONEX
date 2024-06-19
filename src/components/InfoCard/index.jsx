@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const InfoCard = ({ infoCard }) => {
+const InfoCard = ({ infoCard, onClick }) => {
   return (
     <article className={infoCard.cardStyle}>
       <img
@@ -20,14 +20,16 @@ const InfoCard = ({ infoCard }) => {
           className={infoCard.textBackgroundStyle}
         />
       )}
-      <p className={infoCard.abreviatedTitleStyle}>
-        {infoCard.abreviatedTitle}
+      <p className={infoCard.abbreviatedTitleStyle}>
+        {infoCard.abbreviatedTitle}
       </p>
       <div className={infoCard.textSectionStyle}>
         <p className="text-xl font-bold">{infoCard.title}</p>
         <p className={infoCard.textStyle}>{infoCard.text}</p>
       </div>
-      <button className={infoCard.btnStyle}>...</button>
+      <button className={infoCard.btnStyle} onClick={onClick}>
+        ...
+      </button>
     </article>
   );
 };

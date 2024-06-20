@@ -16,7 +16,9 @@ const AboutUS = () => {
             className="w-[27rem] -translate-y-4"
           />
           <div className="h-[52%] mt-16 font-thin text-2xl">
-            O atendimento psicológico para idosos é direcionado ao desenvolvimento cognitivo. Geralmente, essas terapias são desempenhadas
+          Somos a CONEX - Conexão Emocional e Acolhimento, aqui você encontra especialista capacitados para lhe ajudar, dentro de um ambiente amigável, empático e respeitoso.
+Em 2020 na pandemia de COVID-19 quando as pessoas precisavam de ajuda e/ou apoio emocional surge a CONEX no Estado de Santa Catarina, mas especificamente em São Bento do Sul, desde então oferecemos atendimentos on-line e presenciais em: Psicologia e saúde da mulher; Psicologia infantil; Psicologia do adulto e do idoso; Arteterapia; Terapia cognitivo comportamental.
+Localização: Rua Jardins da felicidade - 1355, bairro centro, São Bento do Sul.
           </div>
           <img
             src={alunos}

@@ -7,7 +7,7 @@ import youtube from "../../assets/homePage/Footer/IconYoutube.png";
 import line from "../../assets/homePage/Footer/line_footer.png";
 
 const Footer = () => {
-  const listItemStyle = "pt-10 pl-4 text-xl font-bold";
+  const listItemStyle = "pt-10 pl-4 text-lg font-semibold";
   const navLinksStyle = "text-white text-lg font-semibold";
   const iconStyle = "px-2";
   return (
@@ -27,18 +27,18 @@ const Footer = () => {
 
       <div className="flex h-3/5 w-full bg-[#b6dcf7]">
         <div className="flex w-1/2 flex-col pl-28">
-          <div className="text-2xl font-bold text-white">
+          <div className="text-2xl font-semibold text-white">
             CONEX - Conexão Emocional e Acolhimento
           </div>
           <div className="mt-32 flex">
-            <img src={facebook} alt="log-image" className={iconStyle} />
-            <img src={linkedin} alt="log-image" className={iconStyle} />
-            <img src={youtube} alt="log-image" className={iconStyle} />
-            <img src={instagram} alt="log-image" className={iconStyle} />
+            <img src={facebook} alt="log-image" className={iconStyle} width={40} height={40} />
+            <img src={linkedin} alt="log-image" className={iconStyle} width={40} height={40} />
+            <img src={youtube} alt="log-image" className={iconStyle} width={40} height={40} />
+            <img src={instagram} alt="log-image" className={iconStyle} width={40} height={40} />
           </div>
         </div>
         <div className="flex w-1/4 flex-col bg-[#b6dcf7] pl-16">
-          <div className="h-auto text-2xl font-bold text-white">
+          <div className="h-auto text-2xl font-semibold text-white">
             Áreas Trabalhadas
           </div>
           <div className="flex">

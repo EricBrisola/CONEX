@@ -1,3 +1,20 @@
+import textBackground from "../assets/homePage/Main/cloud-blue.png";
+
+import mainImagePSM from "../assets/homePage/Main/psm/psm-img.png";
+import backgroundPSM from "../assets/homePage/Main/psm/psm-retangle.svg";
+
+import mainImagePI from "../assets/homePage/Main/pi/piImg.png";
+import backgroundPI from "../assets/homePage/Main/pi/piCircle.svg";
+
+import mainImagePAI from "../assets/homePage/Main/pai/father-img.png";
+import backgroundPAI from "../assets/homePage/Main/pai/pai-circle.svg";
+
+import mainImageAT from "../assets/homePage/Main/at/arImg 1.png";
+import backgroundAT from "../assets/homePage/Main/at/atRetangle.png";
+
+import mainImageTCC from "../assets/homePage/Main/tcc/tccImg.png";
+import backgroundTCC from "../assets/homePage/Main/tcc/tccImg.svg";
+
 const data = [
   {
     id: 0,
@@ -7,9 +24,9 @@ const data = [
     text: "Aborda uma variedade de tópicos relacionados à saúde integral das mulheres: física, mental e emocional, em diferentes fases do desenvolvimento",
     fullText:
       "Aborda uma variedade de tópicos relacionados à saúde integral das mulheres: física, mental e emocional, em diferentes fases do desenvolvimento, desde a infância até a idade adulta e o envelhecimento. Busca proporcionar conhecimento, bem-estar físico, mental, psicológico e social.",
-    mainImage: require("src/assets/homePage/Main/psm/psm-img.png").default,
-    background: "src/assets/homePage/Main/psm/psm-retangle.svg",
-    textBackground: "src/assets/homePage/Main/cloud-blue.png",
+    mainImage: mainImagePSM,
+    background: backgroundPSM,
+    textBackground: textBackground,
     abbreviatedtitle: "PSM",
     mainImageStyle: "absolute left-[0rem] top-[1.2rem] z-20 object-contain",
     backgroundStyle: "absolute left-3 top-[0.825rem] z-10 object-contain",
@@ -42,8 +59,8 @@ const data = [
     text: "Atua com crianças, ajudando-as a ter um desenvolvimento saudável. É um ramo da ciência que trata das questões psíquicas",
     fullText:
       "Atua com crianças, ajudando-as a ter um desenvolvimento saudável. É um ramo da ciência que trata das questões psíquicas de crianças. Assim, essa especialidade investiga e analisa o comportamento dessa faixa etária.",
-    mainImage: "src/assets/homePage/Main/pi/piImg.png",
-    background: "src/assets/homePage/Main/pi/piCircle.svg",
+    mainImage: mainImagePI,
+    background: backgroundPI,
     textBackground: "",
     abbreviatedtitle: "PI",
     mainImageStyle: "absolute right-4 top-[2.10rem] z-20 object-contain",
@@ -78,9 +95,9 @@ const data = [
     text: "O atendimento psicológico para idosos é direcionado ao desenvolvimento cognitivo. Geralmente, essas terapias são desempenhadas",
     fullText:
       "Geralmente, essas terapias são desempenhadas em grupo para que o idoso também possa desenvolver a socialização. O psicólogo irá intermediar o contato do idoso com as situações desafiadoras da velhice, proporcionando um olhar diferente, e irá desenvolver atividades que ele possa executar e aprender ao mesmo tempo como encarar esses desafios.",
-    mainImage: "src/assets/homePage/Main/pai/father-img.png",
-    background: "src/assets/homePage/Main/pai/pai-circle.svg",
-    textBackground: "src/assets/homePage/Main/cloud-blue.png",
+    mainImage: mainImagePAI,
+    background: backgroundPAI,
+    textBackground: textBackground,
     abbreviatedtitle: "PAI",
     mainImageStyle: "absolute left-[3.4rem] z-20 object-contain",
     backgroundStyle: "absolute left-5 top-16 z-10 object-contain",
@@ -114,8 +131,8 @@ const data = [
     text: "Recorre a elementos da atividade artística como forma de intervenção profissional. É direcionada à qualidade de vida e melhora",
     fullText:
       "Recorre a elementos da atividade artística como forma de intervenção profissional. É direcionada à qualidade de vida e melhora da saúde. Abrange as mais diversas linguagens: pintura, dança, escultura, a história oral, música, modelagem, poesia, o audiovisual, entre outros. Uma forma de permitir o bem-estar e deixar fluir sentimentos por meio da expressão das obras.",
-    mainImage: "src/assets/homePage/Main/at/arImg 1.png",
-    background: "src/assets/homePage/Main/at/atRetangle.png",
+    mainImage: mainImageAT,
+    background: backgroundAT,
     textBackground: "",
     abbreviatedtitle: "AT",
     mainImageStyle: "absolute right-[2.6rem] top-[4.42rem] z-20 object-contain",
@@ -150,9 +167,9 @@ const data = [
     text: "Uma abordagem estruturada, estabelecida a partir da colaboração entre terapeuta e paciente. É recomendada e produz resultados",
     fullText:
       "Produz resultados eficazes para diversos transtornos psicológicos e emocionais, entre eles: Fobias; Ansiedade; Transtornos alimentares; Adicção; Depressão; Transtorno obsessivo-compulsivo (TOC); Comportamentais e psiquiátricos. A técnica consiste em buscar uma reestruturação cognitiva sobre emoções e comportamentos, por meio de intervenções sobre as cognições baseadas em eventos significativos para o paciente.",
-    mainImage: "src/assets/homePage/Main/tcc/tccImg.png",
-    background: "src/assets/homePage/Main/tcc/tccImg.svg",
-    textBackground: "src/assets/homePage/Main/cloud-blue.png",
+    mainImage: mainImageTCC,
+    background: backgroundTCC,
+    textBackground: textBackground,
     abbreviatedtitle: "TCC",
     mainImageStyle: "absolute left-[2.2rem] top-2 z-20 object-contain",
     backgroundStyle: "absolute left-5 top-0 z-10 object-contain",

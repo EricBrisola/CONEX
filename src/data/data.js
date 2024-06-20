@@ -7,7 +7,7 @@ const data = [
     text: "Aborda uma variedade de tópicos relacionados à saúde integral das mulheres: física, mental e emocional, em diferentes fases do desenvolvimento",
     fullText:
       "Aborda uma variedade de tópicos relacionados à saúde integral das mulheres: física, mental e emocional, em diferentes fases do desenvolvimento, desde a infância até a idade adulta e o envelhecimento. Busca proporcionar conhecimento, bem-estar físico, mental, psicológico e social.",
-    mainImage: "src/assets/homePage/Main/psm/psm-img.png",
+    mainImage: require("src/assets/homePage/Main/psm/psm-img.png").default,
     background: "src/assets/homePage/Main/psm/psm-retangle.svg",
     textBackground: "src/assets/homePage/Main/cloud-blue.png",
     abbreviatedtitle: "PSM",

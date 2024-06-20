@@ -17,7 +17,16 @@ const Home = () => {
 
   useEffect(() => {
     setInfoCards(data);
-  }, []);
+    if (isModalOpen) {
+      document.body.classList.add("body-scroll-lock");
+      // });
+    } else {
+      document.body.classList.remove("body-scroll-lock");
+    }
+    return () => {
+      document.body.classList.remove("body-scroll-lock");
+    };
+  }, [isModalOpen]);
 
   const getCurrentCardInfo = (currentCard) => {
     setModalCardInfo({

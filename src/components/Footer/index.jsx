@@ -6,7 +6,9 @@ import linkedin from "../../assets/homePage/Footer/IconLinkedin.png";
 import youtube from "../../assets/homePage/Footer/IconYoutube.png";
 import line from "../../assets/homePage/Footer/line_footer.png";
 
-const Footer = () => {
+const Footer = (props) => {
+  console.log(!!props.noButton)
+  let isHidden = (!!props.noButton ? " hidden" : "")
   const listItemStyle = "pt-10 pl-4 text-lg font-semibold";
   const navLinksStyle = "text-white text-lg font-semibold";
   const iconStyle = "px-2";
@@ -14,12 +16,12 @@ const Footer = () => {
     <div className="max-w-screen mt-[6.875rem] h-[29.375rem]">
       <div className="flex h-2/5 w-full flex-col items-center justify-start">
         <div className="flex h-full w-full flex-col items-center justify-start overflow-visible rounded-t-full bg-[#b6dcf7]">
-          <div className="relative top-[-6.25rem] flex h-[13.125rem] w-2/5 items-center justify-center rounded-full bg-[#b6dcf7] shadow-[-3.125rem_2.1875rem_0.3125rem_-0.9375rem_rgba(0,0,0,0.3)] hover:cursor-pointer">
+          <div className={"relative top-[-6.25rem] flex h-[13.125rem] w-2/5 items-center justify-center rounded-full bg-[#b6dcf7] shadow-[-3.125rem_2.1875rem_0.3125rem_-0.9375rem_rgba(0,0,0,0.3)] hover:cursor-pointer" + isHidden}>
             <h1 className="text-[3.375rem] font-medium">Conexe Conosco</h1>
             <img
               src={cursorImage}
               alt="log-image"
-              className="absolute -right-[12rem] top-[0rem] cursor-default"
+              className="absolute -right-[12rem] top-[0rem] cursor-default "
             />
           </div>
         </div>

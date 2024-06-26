@@ -19,7 +19,7 @@ const Professionals = () => {
           CONHEÇA AS ÁREAS ATENDIDAS
         </p>
       </section>
-      <section className="relative mb-[18.344rem] flex flex-1 flex-col items-center gap-40">
+      <section className="relative mb-[10.344rem] flex flex-1 flex-col items-center gap-40">
         {professionalsInfos &&
           professionalsInfos.map((professional) => {
             return (

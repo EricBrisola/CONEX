@@ -22,7 +22,7 @@ const professionalsData = [
     phoneNumber: "(99) 9 9988 - 8888",
     email: "yane_martinss@hotmail.com",
     infoCardStyle:
-      "absolute left-20 top-[5.813rem] z-30 flex flex-col items-center gap-[1.375rem]",
+      "absolute left-20 top-[5.125rem] z-30 flex flex-col items-center gap-[1.375rem]",
     textSectionStyle:
       "absolute right-[6.875rem] top-[5.125rem] z-30 flex flex-col-reverse items-center gap-[1.375rem]",
     blueCardStyle:
@@ -42,7 +42,7 @@ const professionalsData = [
     phoneNumber: "(99) 9 8888 - 9999",
     email: "miguelAssis345@gmail.com",
     infoCardStyle:
-      "absolute right-[6.25rem] top-[4.438rem] z-30 flex flex-col-reverse items-center gap-[1.375rem]",
+      "absolute right-[6.25rem] top-[5.65rem] z-30 flex flex-col-reverse items-center gap-[1.375rem]",
     textSectionStyle:
       "absolute left-[6.688rem] top-[10.5rem] z-30 flex flex-col items-center gap-[1.375rem]",
     blueCardStyle:
@@ -62,7 +62,7 @@ const professionalsData = [
     phoneNumber: "(99) 9 9123 - 4444",
     email: "luc_guimaraes@hotmail.com",
     infoCardStyle:
-      "absolute left-20 top-[5.813rem] z-30 flex flex-col items-center gap-[1.375rem]",
+      "absolute left-20 top-[5.125rem] z-30 flex flex-col items-center gap-[1.375rem]",
     textSectionStyle:
       "absolute right-[6.875rem] top-[5.125rem] z-30 flex flex-col-reverse items-center gap-[1.375rem]",
     blueCardStyle:
@@ -82,7 +82,7 @@ const professionalsData = [
     phoneNumber: "(99) 9 9943 - 5379",
     email: "fernandacordeiro@hotmail.com",
     infoCardStyle:
-      "absolute right-[6.25rem] top-[4.438rem] z-30 flex flex-col-reverse items-center gap-[1.375rem]",
+      "absolute right-[6.25rem] top-[5.65rem] z-30 flex flex-col-reverse items-center gap-[1.375rem]",
     textSectionStyle:
       "absolute left-[6.688rem] top-[10.5rem] z-30 flex flex-col items-center gap-[1.375rem]",
     blueCardStyle:
@@ -102,7 +102,7 @@ const professionalsData = [
     phoneNumber: "(99) 9 8643 - 4222",
     email: "fernandocarlos@yahoo.com",
     infoCardStyle:
-      "absolute left-20 top-[5.813rem] z-30 flex flex-col items-center gap-[1.375rem]",
+      "absolute left-20 top-[5.125rem] z-30 flex flex-col items-center gap-[1.375rem]",
     textSectionStyle:
       "absolute right-[6.875rem] top-[5.125rem] z-30 flex flex-col-reverse items-center gap-[1.375rem]",
     blueCardStyle:

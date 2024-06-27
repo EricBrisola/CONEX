@@ -21,7 +21,9 @@ const Footer = (props) => {
               isHidden
             }
           >
-            <h1 className="text-[3.375rem] font-medium">Conexe Conosco</h1>
+            <h1 className="text-[3.375rem] font-medium">
+              <Link to={"/contact-us"}>Conexe Conosco</Link>
+            </h1>
             <img
               src={cursorImage}
               alt="log-image"

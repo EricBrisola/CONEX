@@ -34,7 +34,7 @@ const professionalsData = [
   {
     id: 1,
     title: "Psicologia Infantil",
-    text: "“Como psicóloga especializada na saúde da mulher, sinto uma conexão profunda com cada paciente, pois juntas exploramos os caminhos da mente e do corpo, buscando bem-estar e harmonia em todas as fases da vida.”",
+    text: "“Para um psicólogo infantil, trabalhar com crianças é instigante e gratificante, pois permite acompanhar e contribuir para seu desenvolvimento emocional e cognitivo.”",
     image: miguel,
     secondaryImage: piProfessionalImg,
     name: "Miguel de Assis",
